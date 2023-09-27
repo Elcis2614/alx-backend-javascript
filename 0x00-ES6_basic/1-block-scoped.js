@@ -2,7 +2,7 @@ export default function taskBlock(trueOrFalse) {
   let task;
   let task2;
 
-  if (trueOrFalse || true) {
+  if (trueOrFalse) {
     task = false;
     task2 = true;
   }
