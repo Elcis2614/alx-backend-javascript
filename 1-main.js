@@ -1,5 +1,4 @@
+import getResponseFromAPI from "./0-promise.js";
 
-import getNeighborhoodsList from './2-arrow.js';
-const neighborhoodsList = new getNeighborhoodsList();
-const res = neighborhoodsList.addNeighborhood('Noe Valley');
-console.log(res);
+const response = getResponseFromAPI();
+console.log(response instanceof Promise);
