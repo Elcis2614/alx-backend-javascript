@@ -1,4 +1,3 @@
-import handleResponseFromAPI from "./2-then";
+import getBudgetObject from './7-getBudgetObject.js';
 
-const promise = Promise.reject();
-handleResponseFromAPI(promise);
+console.log(getBudgetObject(400, 700, 900));
