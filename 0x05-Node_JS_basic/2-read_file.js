@@ -1,5 +1,6 @@
+const fs = require('node:fs');
+
 module.exports = function countStudents(path) {
-  const fs = require('node:fs');
   try {
     const data = fs.readFileSync(path, 'utf8').split('\n').slice(1);
     console.log(`Number of students: ${data.length - 1}`);
