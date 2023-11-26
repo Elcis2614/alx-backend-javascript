@@ -8,4 +8,6 @@ readline.question('Welcome to Holberton School, what is your name?\n', (name) =>
   readline.close();
 });
 
-process.on('SIGINT', () => console.log('This important software is now closing'));
+process.on('beforeExit', () => {
+  console.log('This important software is now closing');
+});
